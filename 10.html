@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile First Interface</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        @media (min-width: 700px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Learning Portal</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Learn webpage structure.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Learn webpage styling.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Learn webpage programming.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

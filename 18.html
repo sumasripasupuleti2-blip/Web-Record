@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Page Layout</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1;
+            background: lightblue;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Flexbox Layout</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>HTML</h2>
+            <p>Structure of webpages.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>Styling of webpages.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>Webpage interaction.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Flexbox Demonstration
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Gradients</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        .box {
+            width: 300px;
+            height: 130px;
+            margin: 25px auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .linear {
+            background: linear-gradient(
+                to right, red, orange, yellow
+            );
+        }
+
+        .radial {
+            background: radial-gradient(
+                circle, blue, purple, pink
+            );
+        }
+
+        .conic {
+            background: conic-gradient(
+                red, yellow, green, blue, red
+            );
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Gradient Demonstration</h1>
+
+    <h2>Linear Gradient</h2>
+    <div class="box linear">
+        Linear Gradient
+    </div>
+
+    <h2>Radial Gradient</h2>
+    <div class="box radial">
+        Radial Gradient
+    </div>
+</body>
+</html>

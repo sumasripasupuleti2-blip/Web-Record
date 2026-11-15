@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation Bar</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: navy;
+            padding: 15px 25px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .links a:hover {
+            background: royalblue;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .links {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            MyWebsite
+        </div>
+
+        <div class="links">
+
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Services</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <h1 style="text-align:center;">
+        Responsive Navigation Bar
+    </h1>
+
+</body>
+</html>

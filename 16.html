@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors and Combinators</title>
+
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background: yellow;
+            padding: 10px;
+        }
+
+        /* ID Selector */
+        #heading {
+            color: red;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Descendant Combinator */
+        div p {
+            font-style: italic;
+        }
+
+        /* Child Combinator */
+        div > h2 {
+            text-decoration: underline;
+        }
+
+        /* Hover Pseudo-class */
+        button:hover {
+            background: green;
+            color: white;
+        }
+
+        /* First Child Pseudo-class */
+        li:first-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selectors</h1>
+
+    <p>Element Selector Example</p>
+
+    <p class="highlight">
+        Class Selector Example
+    </p>
+
+    <div>
+
+        <h2>Combinator Example</h2>
+
+        <p>Descendant Selector Example</p>
+
+    </div>
+
+    <h3>List Example</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <button>Move Mouse Here</button>
+
+</body>
+</html>

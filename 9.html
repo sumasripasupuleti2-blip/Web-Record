@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Wireframe</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 15px;
+        }
+
+        .header {
+            background: #d9e8ff;
+            border: 2px dashed navy;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .navbar {
+            background: #eeeeee;
+            border: 2px dashed gray;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .layout {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .main {
+            flex: 3;
+            height: 250px;
+            background: #e8ffe8;
+            border: 2px dashed green;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #fff0d9;
+            border: 2px dashed orange;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .footer {
+            background: #dddddd;
+            border: 2px dashed gray;
+            padding: 25px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .layout {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>HEADER / LOGO</h1>
+    </div>
+
+    <div class="navbar">
+        HOME | ABOUT | SERVICES | CONTACT
+    </div>
+
+    <div class="layout">
+
+        <div class="main">
+            <h2>MAIN CONTENT</h2>
+            <p>Website information goes here.</p>
+        </div>
+
+        <div class="sidebar">
+            <h2>SIDEBAR</h2>
+            <p>Additional information</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>FOOTER</h2>
+        <p>Copyright Information</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Input Types and Location</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #edf4ff;
+            padding: 20px;
+        }
+
+        form {
+            background: white;
+            width: 350px;
+            max-width: 100%;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <h2>HTML5 Form Elements</h2>
+
+        <label>Name:</label><br>
+        <input type="text" required><br>
+
+        <label>Email:</label><br>
+        <input type="email" required><br>
+
+        <label>Date:</label><br>
+        <input type="date"><br>
+
+        <label>Age:</label><br>
+        <input type="number" min="1" max="100"><br>
+
+        <label>Choose Color:</label><br>
+        <input type="color"><br>
+
+        <label>Upload File:</label><br>
+        <input type="file"><br><br>
+
+        <button type="submit">Submit</button>
+
+        <hr>
+
+        <h2>Location Support</h2>
+
+        <button type="button" onclick="getLocation()">
+            Get Location
+        </button>
+
+        <p id="result">Location will appear here.</p>
+
+    </form>
+
+    <script>
+        function getLocation() {
+
+            const result =
+                document.getElementById("result");
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+
+                        result.innerHTML =
+                            "Latitude: " +
+                            position.coords.latitude +
+                            "<br>Longitude: " +
+                            position.coords.longitude;
+                    },
+
+                    function() {
+                        result.innerHTML =
+                            "Unable to retrieve location.";
+                    }
+                );
+
+            } else {
+
+                result.innerHTML =
+                    "Geolocation is not supported.";
+            }
+        }
+    </script>
+
+</body>
+</html>

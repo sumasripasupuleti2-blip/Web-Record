@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Specificity and Cascade</title>
+
+    <style>
+        /* Element Selector */
+        p {
+            color: green;
+        }
+
+        /* Class Selector */
+        .text {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #special {
+            color: red;
+        }
+
+        /* Important Rule */
+        .important {
+            color: purple !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Specificity Demonstration</h1>
+
+    <p>This text is green.</p>
+
+    <p class="text">
+        This text is blue.
+    </p>
+
+    <p class="text" id="special">
+        This text is red.
+    </p>
+
+    <p class="important" id="special">
+        This text is purple because of !important.
+    </p>
+
+</body>
+</html>

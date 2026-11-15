@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning Techniques</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            min-height: 1200px;
+        }
+
+        .box {
+            padding: 15px;
+            margin: 15px;
+            width: 200px;
+            background: lightblue;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            left: 40px;
+        }
+
+        .parent {
+            position: relative;
+            height: 150px;
+            background: lightgray;
+            margin: 15px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: orange;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: lightgreen;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning Demonstration</h1>
+
+    <div class="box static">
+        Static Position
+    </div>
+
+    <div class="box relative">
+        Relative Position
+    </div>
+
+    <div class="parent">
+
+        <div class="box absolute">
+            Absolute Position
+        </div>
+
+    </div>
+
+    <div class="box sticky">
+        Sticky Position
+    </div>
+
+    <div class="box fixed">
+        Fixed Position
+    </div>
+
+    <p>Scroll down to observe positioning.</p>
+
+</body>
+</html>

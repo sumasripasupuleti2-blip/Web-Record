@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimedia Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #eef5ff;
+        }
+
+        .container {
+            background: white;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        audio, video {
+            margin: 15px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTML Multimedia Elements</h1>
+
+        <h2>Audio Player</h2>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <h2>Video Player</h2>
+
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+    </div>
+
+</body>
+</html>

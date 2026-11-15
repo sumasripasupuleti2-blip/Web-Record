@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Sizing and Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            width: 220px;
+            height: 120px;
+            padding: 15px;
+            border: 5px solid navy;
+            background: lightblue;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .sizing {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Sizing and Overflow</h1>
+
+    <div class="container">
+
+        <div class="box visible">
+            <h3>Visible</h3>
+            This is extra content that extends outside the box.
+        </div>
+
+        <div class="box hidden">
+            <h3>Hidden</h3>
+            This is extra content that will be clipped inside the box.
+        </div>
+
+        <div class="box scroll">
+            <h3>Scroll</h3>
+            This box always displays scrollbars when its content overflows.
+        </div>
+
+        <div class="box auto">
+            <h3>Auto</h3>
+            This box displays scrollbars when required.
+        </div>
+
+        <div class="box sizing">
+            <h3>Border Box</h3>
+            Padding and border are included in the specified dimensions.
+        </div>
+
+    </div>
+
+</body>
+</html>

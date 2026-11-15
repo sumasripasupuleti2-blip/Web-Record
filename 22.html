@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Layout</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 80px 200px 80px;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .header {
+            grid-column: 1 / 3;
+            background: navy;
+            color: white;
+        }
+
+        .main {
+            background: lightblue;
+        }
+
+        .sidebar {
+            background: lightyellow;
+        }
+
+        .footer {
+            grid-column: 1 / 3;
+            background: gray;
+            color: white;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">
+        CSS Grid Page Layout
+    </h1>
+
+    <div class="grid-container">
+
+        <div class="item header">
+            Header
+        </div>
+
+        <div class="item main">
+            Main Content
+        </div>
+
+        <div class="item sidebar">
+            Sidebar
+        </div>
+
+        <div class="item footer">
+            Footer
+        </div>
+
+    </div>
+
+</body>
+</html>
